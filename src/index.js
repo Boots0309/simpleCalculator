@@ -7,19 +7,23 @@ document.getElementById("num2-el").textContent = num2;
 
 // creat four function: add(), subtract(), divide(), multiply()
 function add() {
-    num1 + num2;
+    let total = num1 + num2;
+    answer.textContent = "Result: " + total;
 };
 
 function subtract() {
-    console.log("minus button was clicked");
+    let total = num1 - num2;
+    answer.textContent = "Result: " + total;
 };
 
 function divide() {
-    console.log("divide button was clicked");
+    let total = num1 / num2;
+    answer.textContent = "Result: " + total;
 };
 
 function multiply() {
-    console.log("times button was clicked");
+    let total = num1 * num2;
+    answer.textContent = "Result: " + total;
 };
 // call the correct function when the user clicks on one of the buttons
 // perform the given calculation in the paragraph with id="sum-el"
